@@ -4,6 +4,13 @@
   "description": "Quickly re-run your last command in the integrated terminal.",
   "version": "0.0.1",
   "publisher": "Cameron",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cameronmaske/rerun-last-command-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cameronmaske/rerun-last-command-vscode/issues"
+  },
   "engines": {
     "vscode": "^1.29.0"
   },
