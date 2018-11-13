@@ -1,0 +1,46 @@
+{
+  "name": "rerun-last-command",
+  "displayName": "Re-run Last Command",
+  "description": "Quickly re-run your last command in the integrated terminal.",
+  "version": "0.0.1",
+  "publisher": "Cameron",
+  "engines": {
+    "vscode": "^1.29.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.rerunLastCommand"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.rerunLastCommand",
+        "title": "Rerun Last Command In Terminal"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.rerunLastCommand",
+        "key": "ctrl+f7",
+        "mac": "cmd+f7"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "tslint": "^5.8.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  }
+}
